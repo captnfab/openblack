@@ -456,7 +456,7 @@ const std::string& Game::GetGamePath()
 #ifdef _WIN32
 		sGamePath = std::string("C:\\Program Files (x86)\\Lionhead Studios Ltd\\Black & White");
 #else
-		sGamePath = std::string("/mnt/windows/Program Files (x86/Lionhead Studios Ltd/Black & White");
+		sGamePath = std::string("/mnt/deuxto/privé/tmp/Black & White");
 #endif // _WIN32
 
 		std::clog << "Guessing GamePath: " << sGamePath << std::endl;
