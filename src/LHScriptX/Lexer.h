@@ -27,6 +27,10 @@
 #define __assume(cond) do { if (!(cond)) __builtin_unreachable(); } while (0)
 #endif
 
+#ifdef __GNUC__
+#define __assume(cond) do { if (!(cond)) __builtin_unreachable(); } while (0)
+#endif
+
 #ifdef _MSC_VER
 #define __builtin_unreachable() __assume(0)
 #endif
